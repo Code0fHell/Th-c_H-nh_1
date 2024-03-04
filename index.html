@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <!-- Embed Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1 class="survey-heading">Khảo sát thông tin</h1>
+            <div class="body">
+            <form id="surveyForm">
+                <!-- Thông tin cá nhân -->
+                <label for="fullName">Họ và Tên:</label>
+                <input class="surveyForm__info" type="text" id="fullName" required>
+    
+                <label for="dob">Ngày Tháng Năm Sinh:</label>
+                <input class="surveyForm__info" type="date" id="dob" required>
+    
+                <label for="cccd">CCCD:</label>
+                <input class="surveyForm__info" type="text" id="cccd" required>
+    
+                <label for="address">Địa Chỉ Thường Trú:</label>
+                <input class="surveyForm__info" type="text" id="address" required></input>
+                <button type="button" id="submit" class="formSurvey__submit" onclick="submitForm()">Gửi đi</button>
+            </form>
+            <figure>
+                <img src="./assets/img/bc-img.jpeg" alt="" class="bc-img">
+            </figure>
+            </div>
+        </div>
+    </main>
+    <script src="./js/surveyInfo.js"></script>
+</body>
+</html>

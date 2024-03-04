@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1 class="survey-heading">Trả lời khảo sát</h1>
+            <form id="questionsForm">
+                <p class="desc">Hãy trả lời các câu hỏi theo yêu cầu</p>
+                <div class="yes_no-question">
+                </div>
+                <div class="choose_one_question">
+                </div>
+                <div class="choose_many_question">
+                </div>
+                <div class="essay_question">
+                </div>
+                <button type="button" id="submit" class="submit__Survey" onclick="saveSurveyData()">Submit</button>
+            </form>
+        </div>
+    </main>
+    <script src="./js/surveyQuestions.js"></script>
+</body>
+</html>
